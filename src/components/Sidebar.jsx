@@ -86,8 +86,8 @@ const Sidebar = ({ isOpen, position = 'left' }) => {
         ...borderStyle
       }}
     >
-      <div className="!p-6">  
-        <div className="!mb-4">
+      <div className="!p-4">  
+        <div className="!mb-2">
           
           {/* User Info */}
           {currentUser && (

@@ -48,10 +48,19 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 14px; /* Reduced base font size from 16px to 14px */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  font-size: 0.875rem; /* 14px base */
+  line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-primary);
@@ -196,5 +205,109 @@ body {
 .rich-text-content pre code {
   background: none;
   padding: 0;
+}
+
+/* Global Font Size Reduction */
+#root {
+  font-size: 0.875rem !important; /* 14px base */
+}
+
+#root * {
+  font-size: inherit !important;
+}
+
+/* Reduced font sizes for all text elements */
+h1 { font-size: 1.5rem !important; line-height: 1.4 !important; font-weight: 700 !important; }
+h2 { font-size: 1.25rem !important; line-height: 1.4 !important; font-weight: 600 !important; }
+h3 { font-size: 1.125rem !important; line-height: 1.4 !important; font-weight: 600 !important; }
+h4 { font-size: 1rem !important; line-height: 1.4 !important; font-weight: 600 !important; }
+h5 { font-size: 0.875rem !important; line-height: 1.4 !important; font-weight: 600 !important; }
+h6 { font-size: 0.75rem !important; line-height: 1.4 !important; font-weight: 600 !important; }
+
+/* Button and input sizing */
+button, input, textarea, select {
+  font-size: 0.875rem !important;
+  line-height: 1.4 !important;
+}
+
+/* Small text elements */
+.text-muted, .text-gray-500, .text-gray-400 {
+  font-size: 0.75rem !important;
+  line-height: 1.3 !important;
+}
+
+/* Card and component text */
+.card, .bg-white, .bg-gray-50, .bg-blue-50, .bg-green-50 {
+  font-size: 0.875rem !important;
+}
+
+.card *, .bg-white *, .bg-gray-50 *, .bg-blue-50 *, .bg-green-50 * {
+  font-size: inherit !important;
+}
+
+/* Table text */
+table, th, td {
+  font-size: 0.875rem !important;
+  line-height: 1.4 !important;
+}
+
+/* Form elements */
+label, .form-label {
+  font-size: 0.875rem !important;
+  line-height: 1.4 !important;
+}
+
+/* Navigation and sidebar */
+nav, .sidebar, .navbar {
+  font-size: 0.875rem !important;
+}
+
+nav *, .sidebar *, .navbar * {
+  font-size: inherit !important;
+}
+
+/* Chart text */
+.chartjs-render-monitor {
+  font-size: 0.875rem !important;
+}
+
+/* Modal text */
+.modal, .overlay, .backdrop {
+  font-size: 0.875rem !important;
+}
+
+.modal *, .overlay *, .backdrop * {
+  font-size: inherit !important;
+}
+
+/* Settings page - even smaller font size */
+.settings-page {
+  font-size: 0.75rem !important; /* 12px for settings */
+}
+
+.settings-page * {
+  font-size: inherit !important;
+}
+
+.settings-page h1 { font-size: 1.25rem !important; }
+.settings-page h2 { font-size: 1.125rem !important; }
+.settings-page h3 { font-size: 1rem !important; }
+.settings-page h4 { font-size: 0.875rem !important; }
+.settings-page h5 { font-size: 0.75rem !important; }
+.settings-page h6 { font-size: 0.625rem !important; }
+
+.settings-page button, 
+.settings-page input, 
+.settings-page textarea, 
+.settings-page select {
+  font-size: 0.75rem !important;
+  line-height: 1.3 !important;
+}
+
+.settings-page .text-muted, 
+.settings-page .text-gray-500, 
+.settings-page .text-gray-400 {
+  font-size: 0.625rem !important;
+  line-height: 1.2 !important;
 }
 

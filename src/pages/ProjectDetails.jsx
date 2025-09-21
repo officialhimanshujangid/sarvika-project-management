@@ -247,7 +247,7 @@ const ProjectDetails = () => {
     return (
       <div className="bg-[var(--bg-primary)] !p-6">
         <div className="text-center !py-12">
-          <h2 className="text-xl font-bold text-[var(--text-primary)] !mb-4">Project Not Found</h2>
+          <h2 className="text-lg font-bold text-[var(--text-primary)] !mb-4">Project Not Found</h2>
           <p className="text-[var(--text-secondary)] !mb-6">The project you're looking for doesn't exist.</p>
           <button
             onClick={() => navigate(-1)}

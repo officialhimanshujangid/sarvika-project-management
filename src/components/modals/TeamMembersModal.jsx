@@ -14,7 +14,7 @@ const TeamMembersModal = ({
       <div className="bg-[var(--bg-secondary)] !rounded-xl !p-6 w-full max-w-2xl shadow-2xl max-h-[80vh] overflow-hidden flex flex-col">
         <div className="flex items-center justify-between !mb-6">
           <div>
-            <h2 className="text-xl font-bold text-[var(--text-primary)]">
+            <h2 className="text-lg font-bold text-[var(--text-primary)]">
               {team.name} Members
             </h2>
             <p className="text-[var(--text-secondary)] text-xs">

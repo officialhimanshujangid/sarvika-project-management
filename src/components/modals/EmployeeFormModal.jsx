@@ -89,7 +89,7 @@ const EmployeeFormModal = ({
     <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-[100] !p-4">
       <div className="bg-[var(--bg-secondary)] !rounded-xl !p-6 w-full max-w-lg shadow-2xl max-h-[90vh] overflow-y-auto">
         <div className="flex items-center justify-between !mb-6">
-          <h2 className="text-xl font-bold text-[var(--text-primary)]">
+          <h2 className="text-lg font-bold text-[var(--text-primary)]">
             {isEdit ? 'Edit Employee' : 'Create New Employee'}
           </h2>
           <button

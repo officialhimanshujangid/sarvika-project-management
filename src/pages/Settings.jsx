@@ -42,7 +42,7 @@ const Settings = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[var(--bg-primary)]">
+    <div className="settings-page min-h-screen bg-[var(--bg-primary)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-[var(--text-primary)] mb-3">Settings</h1>
@@ -82,7 +82,7 @@ const Settings = () => {
             {activeTab === 'appearance' && (
               <div className="!space-y-8">
                 <div>
-                  <h2 className="text-xl font-bold text-[var(--text-primary)] mb-6">Theme Settings</h2>
+                  <h2 className="text-lg font-bold text-[var(--text-primary)] mb-6">Theme Settings</h2>
                   
                   {/* Theme Selection */}
                   <div className="!space-y-6">
@@ -127,7 +127,7 @@ const Settings = () => {
             {activeTab === 'sidebar' && (
               <div className="!space-y-8">
                 <div>
-                  <h2 className="text-xl font-bold text-[var(--text-primary)] mb-6">Sidebar Settings</h2>
+                  <h2 className="text-lg font-bold text-[var(--text-primary)] mb-6">Sidebar Settings</h2>
                   
                   <div className="!space-y-6">
                     {/* Sidebar Position */}
@@ -175,7 +175,7 @@ const Settings = () => {
             {activeTab === 'privacy' && (
               <div className="!space-y-8">
                 <div>
-                  <h2 className="text-xl font-bold text-[var(--text-primary)] !mb-6">Privacy & Data Settings</h2>
+                  <h2 className="text-lg font-bold text-[var(--text-primary)] !mb-6">Privacy & Data Settings</h2>
                   
                   <div className="!space-y-6">
                     <div className="flex items-center justify-between !p-4 bg-[var(--bg-tertiary)] !rounded-lg">

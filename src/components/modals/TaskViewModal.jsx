@@ -85,7 +85,7 @@ const TaskViewModal = ({ isOpen, onClose, task }) => {
       <div className="bg-[var(--bg-secondary)] !rounded-xl !p-6 w-full max-w-2xl shadow-2xl max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="flex items-center justify-between !mb-6">
-          <h2 className="text-xl font-bold text-[var(--text-primary)] flex items-center !gap-3">
+          <h2 className="text-lg font-bold text-[var(--text-primary)] flex items-center !gap-3">
             <FiTarget className="text-[var(--accent-primary)]" size={24} />
             Task Details
           </h2>

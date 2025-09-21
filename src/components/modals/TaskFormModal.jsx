@@ -102,7 +102,7 @@ const TaskFormModal = ({ isOpen, onClose, onSubmit, task = null, projectId = nul
         <div className="bg-[var(--bg-secondary)] rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
           <div className="!p-6">
             <div className="flex items-center justify-between !mb-6">
-              <h2 className="text-xl font-bold text-[var(--text-primary)]">
+              <h2 className="text-lg font-bold text-[var(--text-primary)]">
                 {isEdit ? 'Edit Task' : 'Create New Task'}
               </h2>
               <button

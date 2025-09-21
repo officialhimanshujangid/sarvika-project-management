@@ -17,7 +17,7 @@ const EmployeeViewModal = ({
       <div className="bg-[var(--bg-secondary)] !rounded-xl !p-6 w-full max-w-2xl shadow-2xl max-h-[90vh] overflow-y-auto">
         <div className="flex items-center justify-between !mb-6">
           <div>
-            <h2 className="text-xl font-bold text-[var(--text-primary)]">
+            <h2 className="text-lg font-bold text-[var(--text-primary)]">
               Employee Details
             </h2>
             <p className="text-[var(--text-secondary)] text-xs">
@@ -44,11 +44,11 @@ const EmployeeViewModal = ({
         <div className="space-y-6">
           {/* Employee Avatar and Basic Info */}
           <div className="flex items-start !gap-6 !p-6 bg-[var(--bg-tertiary)] !rounded-lg">
-            <div className="w-20 h-20 bg-[var(--accent-primary)] !rounded-full flex items-center justify-center text-white font-bold text-xl">
+            <div className="w-20 h-20 bg-[var(--accent-primary)] !rounded-full flex items-center justify-center text-white font-bold text-lg">
               {employee.name.split(' ').map(n => n[0]).join('').toUpperCase()}
             </div>
             <div className="flex-1">
-              <h3 className="text-xl font-bold text-[var(--text-primary)] !mb-2">
+              <h3 className="text-lg font-bold text-[var(--text-primary)] !mb-2">
                 {employee.name}
               </h3>
               <div className="flex items-center !gap-2 !mb-2">

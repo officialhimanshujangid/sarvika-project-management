@@ -181,7 +181,7 @@ const YourTasks = () => {
               <FiTarget className="text-[var(--accent-primary)]" size={20} />
               <span className="text-xs font-medium text-[var(--text-secondary)]">Total</span>
             </div>
-            <div className="text-xl font-bold text-[var(--text-primary)]">{taskStats.total}</div>
+            <div className="text-lg font-bold text-[var(--text-primary)]">{taskStats.total}</div>
           </div>
           
           <div className="bg-[var(--bg-secondary)] !rounded-lg !p-4 border border-[var(--border-color)]">
@@ -189,7 +189,7 @@ const YourTasks = () => {
               <FiCheckCircle className="text-green-500" size={20} />
               <span className="text-xs font-medium text-[var(--text-secondary)]">Completed</span>
             </div>
-            <div className="text-xl font-bold text-[var(--text-primary)]">{taskStats.completed}</div>
+            <div className="text-lg font-bold text-[var(--text-primary)]">{taskStats.completed}</div>
             <div className="text-xs text-[var(--text-secondary)]">{taskStats.completionRate}%</div>
           </div>
           
@@ -198,7 +198,7 @@ const YourTasks = () => {
               <FiAlertCircle className="text-blue-500" size={20} />
               <span className="text-xs font-medium text-[var(--text-secondary)]">In Progress</span>
             </div>
-            <div className="text-xl font-bold text-[var(--text-primary)]">{taskStats.inProgress}</div>
+            <div className="text-lg font-bold text-[var(--text-primary)]">{taskStats.inProgress}</div>
           </div>
           
           <div className="bg-[var(--bg-secondary)] !rounded-lg !p-4 border border-[var(--border-color)]">
@@ -206,7 +206,7 @@ const YourTasks = () => {
               <FiClock className="text-gray-500" size={20} />
               <span className="text-xs font-medium text-[var(--text-secondary)]">To Do</span>
             </div>
-            <div className="text-xl font-bold text-[var(--text-primary)]">{taskStats.todo}</div>
+            <div className="text-lg font-bold text-[var(--text-primary)]">{taskStats.todo}</div>
           </div>
           
           
@@ -216,7 +216,7 @@ const YourTasks = () => {
               <FiZap className="text-yellow-500" size={20} />
               <span className="text-xs font-medium text-[var(--text-secondary)]">High Priority</span>
             </div>
-            <div className="text-xl font-bold text-[var(--text-primary)]">{taskStats.highPriority}</div>
+            <div className="text-lg font-bold text-[var(--text-primary)]">{taskStats.highPriority}</div>
           </div>
         </div>
       </div>

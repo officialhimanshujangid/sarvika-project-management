@@ -38,7 +38,7 @@ const TeamFormModal = ({
     <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 !p-4">
       <div className="bg-[var(--bg-secondary)] !rounded-xl !p-6 w-full max-w-md shadow-2xl">
         <div className="flex items-center justify-between !mb-6">
-          <h2 className="text-xl font-bold text-[var(--text-primary)]">
+          <h2 className="text-lg font-bold text-[var(--text-primary)]">
             {isEdit ? 'Edit Team' : 'Create New Team'}
           </h2>
           <button

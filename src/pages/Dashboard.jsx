@@ -131,7 +131,7 @@ const doughnutOptions = {
 
 return (
   <div className="bg-[var(--bg-primary)] !p-6 min-h-screen">
-    <h1 className="text-xl font-bold !mb-6 text-[var(--text-primary)]">Project Dashboard</h1>
+    <h1 className="text-lg font-bold !mb-6 text-[var(--text-primary)]">Project Dashboard</h1>
 
     <div className="grid grid-cols-1 md:grid-cols-2 !gap-6 !mb-6">
       {/* Welcome card */}
