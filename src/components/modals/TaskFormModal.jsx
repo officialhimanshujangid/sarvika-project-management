@@ -166,7 +166,7 @@ const TaskFormModal = ({ isOpen, onClose, onSubmit, task = null, projectId = nul
                             ],
                           }}
                           className="bg-[var(--bg-primary)]"
-                          style={{ minHeight: '150px' }}
+                      
                         />
                       </div>
                     </div>

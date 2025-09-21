@@ -214,7 +214,7 @@ const ProjectFormModal = ({ isOpen, onClose, onSubmit, project = null }) => {
                       onChange={setDescription}
                       modules={quillModules}
                       className="bg-[var(--bg-primary)]"
-                      style={{ minHeight: '200px' }}
+                    
                     />
                   </div>
                 </div>
