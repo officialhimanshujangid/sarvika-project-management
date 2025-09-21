@@ -80,7 +80,7 @@ const TaskFormModal = ({ isOpen, onClose, onSubmit, task = null, projectId = nul
               <div className="mx-auto h-16 w-16 bg-red-100 !rounded-full flex items-center justify-center !mb-4">
                 <FiX className="h-8 w-8 text-red-600" />
               </div>
-              <h2 className="text-xl font-bold text-[var(--text-primary)] !mb-2">Access Denied</h2>
+              <h2 className="text-lg font-bold text-[var(--text-primary)] !mb-2">Access Denied</h2>
               <p className="text-[var(--text-secondary)] !mb-6">
                 Only administrators can create or edit tasks.
               </p>
@@ -102,7 +102,7 @@ const TaskFormModal = ({ isOpen, onClose, onSubmit, task = null, projectId = nul
         <div className="bg-[var(--bg-secondary)] rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
           <div className="!p-6">
             <div className="flex items-center justify-between !mb-6">
-              <h2 className="text-2xl font-bold text-[var(--text-primary)]">
+              <h2 className="text-xl font-bold text-[var(--text-primary)]">
                 {isEdit ? 'Edit Task' : 'Create New Task'}
               </h2>
               <button
@@ -115,7 +115,7 @@ const TaskFormModal = ({ isOpen, onClose, onSubmit, task = null, projectId = nul
 
           {isProjectCompleted && (
             <div className="bg-yellow-100 border border-yellow-400 text-yellow-700 !px-4 !py-3 !rounded-lg !mb-6">
-              <p className="text-sm font-medium">
+              <p className="text-xs font-medium">
                 ⚠️ This project is completed. You cannot create new tasks for completed projects.
               </p>
             </div>
@@ -131,7 +131,7 @@ const TaskFormModal = ({ isOpen, onClose, onSubmit, task = null, projectId = nul
               <Form className="space-y-6">
                     {/* Task Title */}
                     <div>
-                      <label className="block text-sm font-medium text-[var(--text-secondary)] !mb-2">
+                      <label className="block text-xs font-medium text-[var(--text-secondary)] !mb-2">
                         <FiFileText className="inline !mr-2" />
                         Task Title *
                       </label>
@@ -141,12 +141,12 @@ const TaskFormModal = ({ isOpen, onClose, onSubmit, task = null, projectId = nul
                         className="w-full !px-4 !py-3 border border-[var(--border-color)] rounded-lg focus:ring-2 focus:ring-[var(--accent-primary)] focus:border-transparent bg-[var(--bg-primary)] text-[var(--text-primary)]"
                         placeholder="Enter task title"
                       />
-                      <ErrorMessage name="title" component="div" className="text-red-500 text-sm !mt-1" />
+                      <ErrorMessage name="title" component="div" className="text-red-500 text-xs !mt-1" />
                     </div>
 
                     {/* Task Description */}
                     <div>
-                      <label className="block text-sm font-medium text-[var(--text-secondary)] !mb-2">
+                      <label className="block text-xs font-medium text-[var(--text-secondary)] !mb-2">
                         <FiFileText className="inline !mr-2" />
                         Description
                       </label>
@@ -174,7 +174,7 @@ const TaskFormModal = ({ isOpen, onClose, onSubmit, task = null, projectId = nul
                 <div className="grid grid-cols-1 md:grid-cols-2 !gap-6">
                   {/* Assigned To */}
                   <div>
-                    <label className="block text-sm font-medium text-[var(--text-secondary)] !mb-2">
+                    <label className="block text-xs font-medium text-[var(--text-secondary)] !mb-2">
                       <FiUser className="inline !mr-2" />
                       Assign To *
                     </label>
@@ -190,12 +190,12 @@ const TaskFormModal = ({ isOpen, onClose, onSubmit, task = null, projectId = nul
                         </option>
                       ))}
                     </Field>
-                    <ErrorMessage name="assignedTo" component="div" className="text-red-500 text-sm !mt-1" />
+                    <ErrorMessage name="assignedTo" component="div" className="text-red-500 text-xs !mt-1" />
                   </div>
 
                   {/* Priority */}
                   <div>
-                    <label className="block text-sm font-medium text-[var(--text-secondary)] !mb-2">
+                    <label className="block text-xs font-medium text-[var(--text-secondary)] !mb-2">
                       <FiFlag className="inline !mr-2" />
                       Priority *
                     </label>
@@ -208,13 +208,13 @@ const TaskFormModal = ({ isOpen, onClose, onSubmit, task = null, projectId = nul
                       <option value="medium">Medium</option>
                       <option value="high">High</option>
                     </Field>
-                    <ErrorMessage name="priority" component="div" className="text-red-500 text-sm !mt-1" />
+                    <ErrorMessage name="priority" component="div" className="text-red-500 text-xs !mt-1" />
                   </div>
                 </div>
 
                 {/* Due Date */}
                 <div>
-                  <label className="block text-sm font-medium text-[var(--text-secondary)] !mb-2">
+                  <label className="block text-xs font-medium text-[var(--text-secondary)] !mb-2">
                     <FiCalendar className="inline !mr-2" />
                     Due Date *
                   </label>
@@ -223,7 +223,7 @@ const TaskFormModal = ({ isOpen, onClose, onSubmit, task = null, projectId = nul
                     name="dueDate"
                     className="w-full !px-4 !py-3 border border-[var(--border-color)] rounded-lg focus:ring-2 focus:ring-[var(--accent-primary)] focus:border-transparent bg-[var(--bg-primary)] text-[var(--text-primary)]"
                   />
-                  <ErrorMessage name="dueDate" component="div" className="text-red-500 text-sm !mt-1" />
+                  <ErrorMessage name="dueDate" component="div" className="text-red-500 text-xs !mt-1" />
                 </div>
 
                 {/* Action Buttons */}

@@ -89,7 +89,7 @@ const EmployeeFormModal = ({
     <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-[100] !p-4">
       <div className="bg-[var(--bg-secondary)] !rounded-xl !p-6 w-full max-w-lg shadow-2xl max-h-[90vh] overflow-y-auto">
         <div className="flex items-center justify-between !mb-6">
-          <h2 className="text-2xl font-bold text-[var(--text-primary)]">
+          <h2 className="text-xl font-bold text-[var(--text-primary)]">
             {isEdit ? 'Edit Employee' : 'Create New Employee'}
           </h2>
           <button
@@ -111,7 +111,7 @@ const EmployeeFormModal = ({
             <Form className="!space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 !gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-[var(--text-primary)] !mb-2">
+                  <label className="block text-xs font-medium text-[var(--text-primary)] !mb-2">
                     <FiUser className="inline !mr-2" size={16} />
                     Username
                   </label>
@@ -128,12 +128,12 @@ const EmployeeFormModal = ({
                   <ErrorMessage 
                     name="username" 
                     component="div" 
-                    className="text-red-500 text-sm !mt-1" 
+                    className="text-red-500 text-xs !mt-1" 
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-[var(--text-primary)] !mb-2">
+                  <label className="block text-xs font-medium text-[var(--text-primary)] !mb-2">
                     <FiUser className="inline !mr-2" size={16} />
                     Full Name
                   </label>
@@ -150,13 +150,13 @@ const EmployeeFormModal = ({
                   <ErrorMessage 
                     name="name" 
                     component="div" 
-                    className="text-red-500 text-sm !mt-1" 
+                    className="text-red-500 text-xs !mt-1" 
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-[var(--text-primary)] !mb-2">
+                <label className="block text-xs font-medium text-[var(--text-primary)] !mb-2">
                     <FiMail className="inline !mr-2" size={16} />
                   Email Address
                 </label>
@@ -173,13 +173,13 @@ const EmployeeFormModal = ({
                 <ErrorMessage 
                   name="email" 
                   component="div" 
-                  className="text-red-500 text-sm mt-1" 
+                  className="text-red-500 text-xs mt-1" 
                 />
               </div>
 
               {!isEdit && (
                 <div>
-                  <label className="block text-sm font-medium text-[var(--text-primary)] !mb-2">
+                  <label className="block text-xs font-medium text-[var(--text-primary)] !mb-2">
                       <FiKey className="inline !mr-2" size={16} />
                     Password
                   </label>
@@ -196,14 +196,14 @@ const EmployeeFormModal = ({
                   <ErrorMessage 
                     name="password" 
                     component="div" 
-                    className="text-red-500 text-sm !mt-1" 
+                    className="text-red-500 text-xs !mt-1" 
                   />
                 </div>
               )}
 
               <div className="grid grid-cols-1 md:grid-cols-2 !gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-[var(--text-primary)] !mb-2">
+                  <label className="block text-xs font-medium text-[var(--text-primary)] !mb-2">
                     User Type
                   </label>
                   <Field
@@ -221,12 +221,12 @@ const EmployeeFormModal = ({
                   <ErrorMessage 
                     name="userType" 
                     component="div" 
-                    className="text-red-500 text-sm !mt-1" 
+                    className="text-red-500 text-xs !mt-1" 
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-[var(--text-primary)] !mb-2">
+                  <label className="block text-xs font-medium text-[var(--text-primary)] !mb-2">
                     <FiUsers className="inline !mr-2" size={16} />
                     Assign to Team
                   </label>
@@ -249,7 +249,7 @@ const EmployeeFormModal = ({
                   <ErrorMessage 
                     name="teamId" 
                     component="div" 
-                    className="text-red-500 text-sm !mt-1" 
+                    className="text-red-500 text-xs !mt-1" 
                   />
                 </div>
               </div>

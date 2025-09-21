@@ -88,7 +88,7 @@ const Login = () => {
             {({ errors, touched}) => (
               <Form className="!space-y-6">
                 <div>
-                  <label htmlFor="username" className="block text-sm font-medium text-gray-700 !mb-1">
+                  <label htmlFor="username" className="block text-xs font-medium text-gray-700 !mb-1">
                     User ID
                   </label>
                   <div className="relative">
@@ -108,11 +108,11 @@ const Login = () => {
                     />
                   </div>
                   {errors.username && touched.username && (
-                    <div className="!mt-1 text-sm text-red-600">{errors.username}</div>
+                    <div className="!mt-1 text-xs text-red-600">{errors.username}</div>
                   )}
                 </div>
                 <div>
-                  <label htmlFor="password" className="block text-sm font-medium text-gray-700 !mb-1">
+                  <label htmlFor="password" className="block text-xs font-medium text-gray-700 !mb-1">
                     Password
                   </label>
                   <div className="relative">
@@ -142,7 +142,7 @@ const Login = () => {
                     </button>
                   </div>
                   {errors.password && touched.password && (
-                    <div className="!mt-1 text-sm text-red-600">{errors.password}</div>
+                    <div className="!mt-1 text-xs text-red-600">{errors.password}</div>
                   )}
                 </div>
                 
@@ -150,7 +150,7 @@ const Login = () => {
                   <button
                     type="button"
                     onClick={() => setIsForgotPasswordOpen(true)}
-                    className="text-sm text-indigo-600 hover:text-indigo-500 transition-colors"
+                    className="text-xs text-indigo-600 hover:text-indigo-500 transition-colors"
                   >
                     Forgot your password?
                   </button>
@@ -159,7 +159,7 @@ const Login = () => {
                   <button
                     type="submit"
                     disabled={loading}
-                    className={`w-full flex justify-center items-center   !py-3 !px-4 !border border-transparent !rounded-lg shadow-sm text-sm font-medium text-white 
+                    className={`w-full flex justify-center items-center   !py-3 !px-4 !border border-transparent !rounded-lg shadow-sm text-xs font-medium text-white 
                       ${loading
                         ? 'bg-indigo-400 cursor-not-allowed'
                         : 'bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
@@ -187,7 +187,7 @@ const Login = () => {
 
           {/* Demo Credentials Section */}
           <div className="!mt-8 !pt-6 border-t border-gray-200">
-            <h3 className="text-lg font-semibold text-gray-900 !mb-4 text-center">Demo Credentials</h3>
+            <h3 className="text-sm font-semibold text-gray-900 !mb-4 text-center">Demo Credentials</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 !gap-4">
               {/* Employee Demo */}
               <div 
@@ -202,12 +202,12 @@ const Login = () => {
                 </div>
                 <div className="!space-y-2">
                   <div>
-                    <span className="text-sm font-medium text-blue-700">User ID:</span>
-                    <span className="text-sm text-blue-900 !ml-2 font-mono bg-blue-100 !px-2 !py-1 !rounded">jsmith</span>
+                    <span className="text-xs font-medium text-blue-700">User ID:</span>
+                    <span className="text-xs text-blue-900 !ml-2 font-mono bg-blue-100 !px-2 !py-1 !rounded">jsmith</span>
                   </div>
                   <div>
-                    <span className="text-sm font-medium text-blue-700">Password:</span>
-                    <span className="text-sm text-blue-900 !ml-2 font-mono bg-blue-100 !px-2 !py-1 !rounded">jsmith2024</span>
+                    <span className="text-xs font-medium text-blue-700">Password:</span>
+                    <span className="text-xs text-blue-900 !ml-2 font-mono bg-blue-100 !px-2 !py-1 !rounded">jsmith2024</span>
                   </div>
                  
                 </div>
@@ -226,12 +226,12 @@ const Login = () => {
                 </div>
                 <div className="!space-y-2">
                   <div>
-                    <span className="text-sm font-medium text-green-700">User ID:</span>
-                    <span className="text-sm text-green-900 !ml-2 font-mono bg-green-100 !px-2 !py-1 !rounded">admin</span>
+                    <span className="text-xs font-medium text-green-700">User ID:</span>
+                    <span className="text-xs text-green-900 !ml-2 font-mono bg-green-100 !px-2 !py-1 !rounded">admin</span>
                   </div>
                   <div>
-                    <span className="text-sm font-medium text-green-700">Password:</span>
-                    <span className="text-sm text-green-900 !ml-2 font-mono bg-green-100 !px-2 !py-1 !rounded">admin123</span>
+                    <span className="text-xs font-medium text-green-700">Password:</span>
+                    <span className="text-xs text-green-900 !ml-2 font-mono bg-green-100 !px-2 !py-1 !rounded">admin123</span>
                   </div>
                 
                 </div>

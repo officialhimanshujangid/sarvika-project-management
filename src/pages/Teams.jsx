@@ -87,7 +87,7 @@ const Teams = () => {
         {/* Header */}
         <div className="!mb-8">
           <h1 className="text-4xl font-bold text-[var(--text-primary)] !mb-3">Teams Management</h1>
-          <p className="text-lg text-[var(--text-secondary)]">Manage your organization's teams and members</p>
+          <p className="text-sm text-[var(--text-secondary)]">Manage your organization's teams and members</p>
         </div>
 
         {/* Error Message */}
@@ -121,13 +121,13 @@ const Teams = () => {
               >
                 <div className="flex items-start justify-between !mb-4">
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-[var(--text-primary)] !mb-2">
+                    <h3 className="text-lg font-bold text-[var(--text-primary)] !mb-2">
                       {team.name}
                     </h3>
-                    <p className="text-[var(--text-secondary)] text-sm !mb-3">
+                    <p className="text-[var(--text-secondary)] text-xs !mb-3">
                       {team.description}
                     </p>
-                      <div className="flex items-center !gap-2 text-sm text-[var(--text-secondary)]">
+                      <div className="flex items-center !gap-2 text-xs text-[var(--text-secondary)]">
                       <FiUsers size={16} />
                       <span>{teamMembers.length} member{teamMembers.length !== 1 ? 's' : ''}</span>
                     </div>
@@ -142,7 +142,7 @@ const Teams = () => {
                     title="View Members"
                   >
                     <FiEye size={16} />
-                    <span className="text-sm">View</span>
+                    <span className="text-xs">View</span>
                   </button>
                   
                   <button
@@ -151,7 +151,7 @@ const Teams = () => {
                     title="Edit Team"
                   >
                     <FiEdit2 size={16} />
-                    <span className="text-sm">Edit</span>
+                    <span className="text-xs">Edit</span>
                   </button>
                   
                   <button
@@ -160,7 +160,7 @@ const Teams = () => {
                     title="Delete Team"
                   >
                     <FiTrash2 size={16} />
-                    <span className="text-sm">Delete</span>
+                    <span className="text-xs">Delete</span>
                   </button>
                 </div>
               </div>
@@ -172,7 +172,7 @@ const Teams = () => {
         {teams.length === 0 && (
           <div className="text-center !py-12">
             <FiUsers size={64} className="mx-auto text-[var(--text-secondary)] mb-4" />
-            <h3 className="text-xl font-semibold text-[var(--text-primary)] mb-2">No Teams Found</h3>
+            <h3 className="text-lg font-semibold text-[var(--text-primary)] mb-2">No Teams Found</h3>
             <p className="text-[var(--text-secondary)] mb-6">Create your first team to get started</p>
             <button
               onClick={handleCreateTeam}

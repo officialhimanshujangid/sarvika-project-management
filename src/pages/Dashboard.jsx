@@ -131,12 +131,12 @@ const doughnutOptions = {
 
 return (
   <div className="bg-[var(--bg-primary)] !p-6 min-h-screen">
-    <h1 className="text-2xl font-bold !mb-6 text-[var(--text-primary)]">Project Dashboard</h1>
+    <h1 className="text-xl font-bold !mb-6 text-[var(--text-primary)]">Project Dashboard</h1>
 
     <div className="grid grid-cols-1 md:grid-cols-2 !gap-6 !mb-6">
       {/* Welcome card */}
       <div className="bg-[var(--bg-secondary)] !p-4 rounded-lg shadow">
-        <h2 className="text-xl font-semibold !mb-2 text-[var(--text-primary)]">Welcome, {currentUser?.name}!</h2>
+        <h2 className="text-lg font-semibold !mb-2 text-[var(--text-primary)]">Welcome, {currentUser?.name}!</h2>
         <p className="text-[var(--text-secondary)]">Here's an overview of your projects and tasks.</p>
       </div>
 
@@ -166,7 +166,7 @@ return (
     <div className="grid grid-cols-1 md:grid-cols-2 !gap-6 !mb-6">
       {/* Project Status Chart */}
       <div className="bg-[var(--bg-secondary)] !p-4 rounded-lg shadow">
-        <h2 className="text-lg font-semibold !mb-4 text-[var(--text-primary)]">Project Status Distribution</h2>
+        <h2 className="text-sm font-semibold !mb-4 text-[var(--text-primary)]">Project Status Distribution</h2>
         <div className="h-64">
           <Doughnut data={projectStatusData} options={doughnutOptions} className="!mx-auto w-full"  />
         </div>
@@ -174,7 +174,7 @@ return (
 
       {/* Task Status Distribution */}
       <div className="bg-[var(--bg-secondary)] !p-4 rounded-lg shadow">
-        <h2 className="text-lg font-semibold !mb-4 text-[var(--text-primary)]">Overall Task Status Distribution</h2>
+        <h2 className="text-sm font-semibold !mb-4 text-[var(--text-primary)]">Overall Task Status Distribution</h2>
         <div className="h-64">
           <Doughnut data={taskStatusData} options={doughnutOptions} className="!mx-auto w-full"  />
         </div>
@@ -184,7 +184,7 @@ return (
     <div className="grid grid-cols-1 md:grid-cols-1 !gap-6 !mb-6">
       {/* Task Completion Rate by Project */}
       <div className="bg-[var(--bg-secondary)] !p-4 rounded-lg shadow">
-        <h2 className="text-lg font-semibold !mb-4 text-[var(--text-primary)]">Task Completion Rate by Project</h2>
+        <h2 className="text-sm font-semibold !mb-4 text-[var(--text-primary)]">Task Completion Rate by Project</h2>
         <div className="h-64 min-h-[300px]">
           <Bar data={projectCompletionData} options={barOptions} className="!mx-auto w-full" />
         </div>
@@ -195,7 +195,7 @@ return (
 
     {/* Recent Projects */}
     <div className="bg-[var(--bg-secondary)] !p-4 rounded-lg shadow !mb-6">
-      <h2 className="text-lg font-semibold !mb-4 text-[var(--text-primary)]">Recent Projects</h2>
+      <h2 className="text-sm font-semibold !mb-4 text-[var(--text-primary)]">Recent Projects</h2>
       <div className="overflow-x-auto">
         <table className="min-w-full divide-y divide-[var(--border-color)]">
           <thead>

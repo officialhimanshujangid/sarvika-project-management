@@ -156,7 +156,7 @@ const Projects = () => {
           <div className="text-[var(--text-secondary)] !mb-4">
             <FiCalendar size={64} className="mx-auto" />
           </div>
-          <h3 className="text-xl font-medium text-[var(--text-primary)] !mb-2">No projects found</h3>
+          <h3 className="text-lg font-medium text-[var(--text-primary)] !mb-2">No projects found</h3>
           <p className="text-[var(--text-secondary)] !mb-6">
             {searchTerm || statusFilter !== 'all' || priorityFilter !== 'all'
               ? 'No projects match your current filters.'
@@ -180,10 +180,10 @@ const Projects = () => {
                 {/* Project Header */}
                 <div className="flex justify-between items-start !mb-4">
                   <div className="flex-1">
-                    <h3 className="text-lg font-semibold text-[var(--text-primary)] !mb-1">
+                    <h3 className="text-sm font-semibold text-[var(--text-primary)] !mb-1">
                       {project.name}
                     </h3>
-                    <p className="text-sm text-[var(--text-secondary)]">
+                    <p className="text-xs text-[var(--text-secondary)]">
                       {getTeamName(project.teamId)}
                     </p>
                   </div>
@@ -227,7 +227,7 @@ const Projects = () => {
                 </div>
 
                 {/* Description Preview */}
-                <div className="text-sm text-[var(--text-secondary)] !mb-4 line-clamp-3">
+                <div className="text-xs text-[var(--text-secondary)] !mb-4 line-clamp-3">
                   <div 
                     className="rich-text-content"
                     dangerouslySetInnerHTML={{ __html: project.description || '<p>No description provided</p>' }} 
@@ -235,7 +235,7 @@ const Projects = () => {
                 </div>
 
                 {/* Dates */}
-                <div className="flex justify-between text-sm text-[var(--text-secondary)]">
+                <div className="flex justify-between text-xs text-[var(--text-secondary)]">
                   <div>
                     <span className="font-medium">Start:</span> {new Date(project.startDate).toLocaleDateString()}
                   </div>

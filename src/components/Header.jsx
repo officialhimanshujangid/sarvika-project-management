@@ -10,7 +10,7 @@ const Header = ({ toggleSidebar }) => {
         borderBottomColor: 'var(--border-color)'
       }}
     >
-      <h1 className="text-xl font-semibold m-0">Project Management</h1>
+      <h1 className="text-lg font-semibold m-0">Project Management</h1>
       <div className="flex items-center !gap-3">
         <ThemeToggle />
         <button 

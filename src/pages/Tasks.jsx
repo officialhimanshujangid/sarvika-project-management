@@ -183,7 +183,7 @@ const Tasks = () => {
           <div className="text-[var(--text-secondary)] !mb-4">
             <FiCalendar size={64} className="mx-auto" />
           </div>
-          <h3 className="text-xl font-medium text-[var(--text-primary)] !mb-2">No tasks found</h3>
+          <h3 className="text-lg font-medium text-[var(--text-primary)] !mb-2">No tasks found</h3>
           <p className="text-[var(--text-secondary)] !mb-6">
             {searchTerm || statusFilter !== 'all' || priorityFilter !== 'all' || projectFilter !== 'all'
               ? 'No tasks match your current filters.'
@@ -206,7 +206,7 @@ const Tasks = () => {
               <div className="flex items-start justify-between !mb-4">
                 <div className="flex-1">
                   <div className="flex items-center !gap-3 !mb-2">
-                    <h3 className="text-lg font-semibold text-[var(--text-primary)]">
+                    <h3 className="text-sm font-semibold text-[var(--text-primary)]">
                       {task.title}
                     </h3>
                     <span className={`!px-2 !py-1 !rounded-full text-xs font-medium ${getStatusColor(task.status)}`}>
@@ -217,7 +217,7 @@ const Tasks = () => {
                     </span>
                   </div>
                   
-                  <div className="flex items-center !gap-4 text-sm text-[var(--text-secondary)] !mb-3">
+                  <div className="flex items-center !gap-4 text-xs text-[var(--text-secondary)] !mb-3">
                     <div className="flex items-center !gap-1">
                       <FiFolder size={14} />
                       <Link 
@@ -237,7 +237,7 @@ const Tasks = () => {
                     </div>
                   </div>
 
-                  <div className="text-sm text-[var(--text-secondary)] !mb-4 line-clamp-2">
+                  <div className="text-xs text-[var(--text-secondary)] !mb-4 line-clamp-2">
                     <div 
                       className="rich-text-content"
                       dangerouslySetInnerHTML={{ __html: task.description || '<p>No description provided</p>' }} 

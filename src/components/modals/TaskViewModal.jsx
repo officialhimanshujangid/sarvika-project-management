@@ -85,7 +85,7 @@ const TaskViewModal = ({ isOpen, onClose, task }) => {
       <div className="bg-[var(--bg-secondary)] !rounded-xl !p-6 w-full max-w-2xl shadow-2xl max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="flex items-center justify-between !mb-6">
-          <h2 className="text-2xl font-bold text-[var(--text-primary)] flex items-center !gap-3">
+          <h2 className="text-xl font-bold text-[var(--text-primary)] flex items-center !gap-3">
             <FiTarget className="text-[var(--accent-primary)]" size={24} />
             Task Details
           </h2>
@@ -101,15 +101,15 @@ const TaskViewModal = ({ isOpen, onClose, task }) => {
         <div className="space-y-6">
           {/* Title and Status */}
           <div>
-            <h3 className="text-xl font-semibold text-[var(--text-primary)] !mb-3">
+            <h3 className="text-lg font-semibold text-[var(--text-primary)] !mb-3">
               {task.title}
             </h3>
             <div className="flex items-center !gap-3">
-              <span className={`!px-3 !py-1 !rounded-full text-sm font-medium flex items-center !gap-2 ${getStatusColor(task.status || 'todo')}`}>
+              <span className={`!px-3 !py-1 !rounded-full text-xs font-medium flex items-center !gap-2 ${getStatusColor(task.status || 'todo')}`}>
                 {getStatusIcon(task.status || 'todo')}
                 {(task.status || 'todo').replace('_', ' ').toUpperCase()}
               </span>
-              <span className={`!px-3 !py-1 !rounded-full text-sm font-medium flex items-center !gap-2 ${getPriorityColor(task.priority || 'medium')}`}>
+              <span className={`!px-3 !py-1 !rounded-full text-xs font-medium flex items-center !gap-2 ${getPriorityColor(task.priority || 'medium')}`}>
                 {getPriorityIcon(task.priority || 'medium')}
                 {(task.priority || 'medium').toUpperCase()}
               </span>
@@ -118,7 +118,7 @@ const TaskViewModal = ({ isOpen, onClose, task }) => {
 
           {/* Description */}
           <div>
-            <h4 className="text-lg font-medium text-[var(--text-primary)] !mb-3 flex items-center !gap-2">
+            <h4 className="text-sm font-medium text-[var(--text-primary)] !mb-3 flex items-center !gap-2">
               <FiFileText size={18} />
               Description
             </h4>
@@ -134,7 +134,7 @@ const TaskViewModal = ({ isOpen, onClose, task }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 !gap-6">
             {/* Project Information */}
             <div className="bg-[var(--bg-primary)] !rounded-lg !p-4 border border-[var(--border-color)]">
-              <h4 className="text-lg font-medium text-[var(--text-primary)] !mb-3 flex items-center !gap-2">
+              <h4 className="text-sm font-medium text-[var(--text-primary)] !mb-3 flex items-center !gap-2">
                 <FiFolder size={18} />
                 Project Information
               </h4>
@@ -152,7 +152,7 @@ const TaskViewModal = ({ isOpen, onClose, task }) => {
 
             {/* Assignment Information */}
             <div className="bg-[var(--bg-primary)] !rounded-lg !p-4 border border-[var(--border-color)]">
-              <h4 className="text-lg font-medium text-[var(--text-primary)] !mb-3 flex items-center !gap-2">
+              <h4 className="text-sm font-medium text-[var(--text-primary)] !mb-3 flex items-center !gap-2">
                 <FiUser size={18} />
                 Assignment
               </h4>
@@ -175,7 +175,7 @@ const TaskViewModal = ({ isOpen, onClose, task }) => {
 
           {/* Due Date Information */}
           <div className="bg-[var(--bg-primary)] !rounded-lg !p-4 border border-[var(--border-color)]">
-            <h4 className="text-lg font-medium text-[var(--text-primary)] !mb-3 flex items-center !gap-2">
+            <h4 className="text-sm font-medium text-[var(--text-primary)] !mb-3 flex items-center !gap-2">
               <FiCalendar size={18} />
               Due Date Information
             </h4>

@@ -54,7 +54,7 @@ const ForgotPasswordModal = ({
     <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-[100] !p-4">
       <div className="bg-[var(--bg-secondary)] !rounded-xl !p-6 w-full max-w-md shadow-2xl">
         <div className="flex items-center justify-between !mb-6">
-          <h2 className="text-2xl font-bold text-[var(--text-primary)]">
+          <h2 className="text-xl font-bold text-[var(--text-primary)]">
             Reset Password
           </h2>
           <button
@@ -80,13 +80,13 @@ const ForgotPasswordModal = ({
                   {error && (
                     <div className="!mb-4 !p-3 bg-red-100 border border-red-400 text-red-700 !rounded-lg flex items-center !gap-2">
                       <FiAlertCircle size={16} />
-                      <span className="text-sm">{error}</span>
+                      <span className="text-xs">{error}</span>
                     </div>
                   )}
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-[var(--text-primary)] !mb-2">
+                  <label className="block text-xs font-medium text-[var(--text-primary)] !mb-2">
                     <FiMail className="inline !mr-2" size={16} />
                     Email Address
                   </label>
@@ -103,12 +103,12 @@ const ForgotPasswordModal = ({
                   <ErrorMessage 
                     name="email" 
                     component="div" 
-                    className="text-red-500 text-sm !mt-1" 
+                    className="text-red-500 text-xs !mt-1" 
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-[var(--text-primary)] !mb-2">
+                  <label className="block text-xs font-medium text-[var(--text-primary)] !mb-2">
                     <FiKey className="inline !mr-2" size={16} />
                     New Password
                   </label>
@@ -125,7 +125,7 @@ const ForgotPasswordModal = ({
                   <ErrorMessage 
                     name="newPassword" 
                     component="div" 
-                    className="text-red-500 text-sm !mt-1" 
+                    className="text-red-500 text-xs !mt-1" 
                   />
                 </div>
               </div>

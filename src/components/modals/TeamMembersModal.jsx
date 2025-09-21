@@ -14,10 +14,10 @@ const TeamMembersModal = ({
       <div className="bg-[var(--bg-secondary)] !rounded-xl !p-6 w-full max-w-2xl shadow-2xl max-h-[80vh] overflow-hidden flex flex-col">
         <div className="flex items-center justify-between !mb-6">
           <div>
-            <h2 className="text-2xl font-bold text-[var(--text-primary)]">
+            <h2 className="text-xl font-bold text-[var(--text-primary)]">
               {team.name} Members
             </h2>
-            <p className="text-[var(--text-secondary)] text-sm">
+            <p className="text-[var(--text-secondary)] text-xs">
               {team.description}
             </p>
           </div>
@@ -44,7 +44,7 @@ const TeamMembersModal = ({
                     <h4 className="font-semibold text-[var(--text-primary)]">
                       {member.name}
                     </h4>
-                    <p className="text-sm text-[var(--text-secondary)]">
+                    <p className="text-xs text-[var(--text-secondary)]">
                       {member.email}
                     </p>
                     <span className="inline-block !px-2 !py-1 text-xs bg-[var(--accent-primary)]/10 text-[var(--accent-primary)] !rounded-full !mt-1">

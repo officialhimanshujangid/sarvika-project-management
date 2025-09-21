@@ -43,7 +43,7 @@ const TaskCard = ({ task, onEdit, onDelete, onView }) => {
       }`}
     >
       <div className="flex justify-between items-start !mb-3">
-        <h4 className="font-medium text-[var(--text-primary)] text-sm">{task.title}</h4>
+        <h4 className="font-medium text-[var(--text-primary)] text-xs">{task.title}</h4>
         <div className="flex !gap-2">
           <button
             onClick={() => onView(task)}
@@ -247,7 +247,7 @@ const ProjectDetails = () => {
     return (
       <div className="bg-[var(--bg-primary)] !p-6">
         <div className="text-center !py-12">
-          <h2 className="text-2xl font-bold text-[var(--text-primary)] !mb-4">Project Not Found</h2>
+          <h2 className="text-xl font-bold text-[var(--text-primary)] !mb-4">Project Not Found</h2>
           <p className="text-[var(--text-secondary)] !mb-6">The project you're looking for doesn't exist.</p>
           <button
             onClick={() => navigate(-1)}
@@ -288,7 +288,7 @@ const ProjectDetails = () => {
           <div className="flex-1">
             <div className="flex items-center !gap-4 !mb-2">
               <h1 className="text-3xl font-bold text-[var(--text-primary)]">{project.name}</h1>
-              <span className={`!px-3 !py-1 !rounded-full text-sm font-medium ${getStatusColor(project.status || 'planning')}`}>
+              <span className={`!px-3 !py-1 !rounded-full text-xs font-medium ${getStatusColor(project.status || 'planning')}`}>
                 {(project.status || 'planning').replace('_', ' ').toUpperCase()}
               </span>
             </div>
@@ -318,29 +318,29 @@ const ProjectDetails = () => {
         <div className="bg-[var(--bg-secondary)] !rounded-lg shadow-sm border border-[var(--border-color)] !p-6 !mb-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 !gap-6">
             <div>
-              <h3 className="text-sm font-medium text-[var(--text-secondary)] !mb-2">Status</h3>
-              <span className={`!px-3 !py-1 !rounded-full text-sm font-medium ${getStatusColor(project.status || 'planning')}`}>
+              <h3 className="text-xs font-medium text-[var(--text-secondary)] !mb-2">Status</h3>
+              <span className={`!px-3 !py-1 !rounded-full text-xs font-medium ${getStatusColor(project.status || 'planning')}`}>
                 {(project.status || 'planning').replace('_', ' ').toUpperCase()}
               </span>
             </div>
             <div>
-              <h3 className="text-sm font-medium text-[var(--text-secondary)] !mb-2">Priority</h3>
-              <span className={`!px-3 !py-1 !rounded-full text-sm font-medium ${getPriorityColor(project.priority || 'medium')}`}>
+              <h3 className="text-xs font-medium text-[var(--text-secondary)] !mb-2">Priority</h3>
+              <span className={`!px-3 !py-1 !rounded-full text-xs font-medium ${getPriorityColor(project.priority || 'medium')}`}>
                 {project.priority.toUpperCase()}
               </span>
             </div>
             <div>
-              <h3 className="text-sm font-medium text-[var(--text-secondary)] !mb-2">Start Date</h3>
+              <h3 className="text-xs font-medium text-[var(--text-secondary)] !mb-2">Start Date</h3>
               <p className="text-[var(--text-primary)]">{new Date(project.startDate).toLocaleDateString()}</p>
             </div>
             <div>
-              <h3 className="text-sm font-medium text-[var(--text-secondary)] !mb-2">End Date</h3>
+              <h3 className="text-xs font-medium text-[var(--text-secondary)] !mb-2">End Date</h3>
               <p className="text-[var(--text-primary)]">{new Date(project.endDate).toLocaleDateString()}</p>
             </div>
           </div>
 
           <div className="!mt-6">
-            <h3 className="text-sm font-medium text-[var(--text-secondary)] !mb-2">Description</h3>
+            <h3 className="text-xs font-medium text-[var(--text-secondary)] !mb-2">Description</h3>
             <div className="rich-text-content">
               <div dangerouslySetInnerHTML={{ __html: project.description || '<p>No description provided</p>' }} />
             </div>
@@ -349,7 +349,7 @@ const ProjectDetails = () => {
 
         {/* Task Board */}
         <div className="bg-[var(--bg-secondary)] !rounded-lg shadow-sm border border-[var(--border-color)] !p-6">
-          <h2 className="text-xl font-semibold text-[var(--text-primary)] !mb-6">Task Board</h2>
+          <h2 className="text-lg font-semibold text-[var(--text-primary)] !mb-6">Task Board</h2>
           
           {loading ? (
             <div className="flex justify-center items-center !py-12">
@@ -407,7 +407,7 @@ const ProjectDetails = () => {
                 <div className="bg-[var(--bg-secondary)] !rounded-lg shadow-xl w-full max-w-md">
                   <div className="!p-6">
                     <div className="flex items-center justify-between !mb-6">
-                      <h2 className="text-xl font-bold text-[var(--text-primary)]">
+                      <h2 className="text-lg font-bold text-[var(--text-primary)]">
                         Change Project Status
                       </h2>
                       <button
@@ -419,7 +419,7 @@ const ProjectDetails = () => {
                     </div>
 
                     <div className="space-y-3 !mb-6">
-                      <p className="text-sm text-[var(--text-secondary)] !mb-4">
+                      <p className="text-xs text-[var(--text-secondary)] !mb-4">
                         Current status: <span className="font-medium">{(project.status || 'planning').replace('_', ' ').toUpperCase()}</span>
                       </p>
                       

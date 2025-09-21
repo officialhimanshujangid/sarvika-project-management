@@ -97,7 +97,7 @@ const Sidebar = ({ isOpen, position = 'left' }) => {
                   {currentUser.name ? currentUser.name.split(' ').map(n => n[0]).join('').toUpperCase() : 'U'}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-[var(--text-primary)] truncate">
+                  <p className="text-xs font-medium text-[var(--text-primary)] truncate">
                     {currentUser.name || currentUser.username}
                   </p>
                   <p className="text-xs text-[var(--text-secondary)] truncate">
@@ -141,7 +141,7 @@ const Sidebar = ({ isOpen, position = 'left' }) => {
                           <Link
                             key={child.label}
                             to={child.path}
-                            className={`block !px-4 !py-2 !rounded-lg text-sm transition-all duration-200 ${
+                            className={`block !px-4 !py-2 !rounded-lg text-xs transition-all duration-200 ${
                               isActive(child.path)
                                 ? 'bg-[var(--accent-primary)] text-white'
                                 : 'text-[var(--text-secondary)] hover:bg-[var(--bg-tertiary)] hover:text-[var(--text-primary)]'

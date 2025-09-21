@@ -38,7 +38,7 @@ const TeamFormModal = ({
     <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 !p-4">
       <div className="bg-[var(--bg-secondary)] !rounded-xl !p-6 w-full max-w-md shadow-2xl">
         <div className="flex items-center justify-between !mb-6">
-          <h2 className="text-2xl font-bold text-[var(--text-primary)]">
+          <h2 className="text-xl font-bold text-[var(--text-primary)]">
             {isEdit ? 'Edit Team' : 'Create New Team'}
           </h2>
           <button
@@ -57,7 +57,7 @@ const TeamFormModal = ({
           {({ isSubmitting, errors, touched }) => (
             <Form className="!space-y-4">
               <div>
-                <label className="block text-sm font-medium text-[var(--text-primary)] !mb-2">
+                <label className="block text-xs font-medium text-[var(--text-primary)] !mb-2">
                   Team Name
                 </label>
                 <Field
@@ -73,12 +73,12 @@ const TeamFormModal = ({
                 <ErrorMessage 
                   name="name" 
                   component="div" 
-                  className="text-red-500 text-sm !mt-1" 
+                  className="text-red-500 text-xs !mt-1" 
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-[var(--text-primary)] !mb-2">
+                <label className="block text-xs font-medium text-[var(--text-primary)] !mb-2">
                   Description
                 </label>
                 <Field
@@ -95,7 +95,7 @@ const TeamFormModal = ({
                 <ErrorMessage 
                   name="description" 
                   component="div" 
-                  className="text-red-500 text-sm !mt-1" 
+                  className="text-red-500 text-xs !mt-1" 
                 />
               </div>
 

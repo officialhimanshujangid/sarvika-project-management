@@ -124,7 +124,7 @@ const Employees = () => {
         {/* Header */}
         <div className="!mb-8">
           <h1 className="text-4xl font-bold text-[var(--text-primary)] !mb-3">Employee Management</h1>
-          <p className="text-lg text-[var(--text-secondary)]">Manage your organization's employees and team assignments</p>
+          <p className="text-sm text-[var(--text-secondary)]">Manage your organization's employees and team assignments</p>
         </div>
 
         {/* Error Message */}
@@ -190,11 +190,11 @@ const Employees = () => {
             <table className="w-full">
               <thead className="bg-[var(--bg-tertiary)]">
                 <tr>
-                  <th className="!px-6 !py-4 text-left text-sm font-semibold text-[var(--text-primary)]">Employee</th>
-                  <th className="!px-6 !py-4 text-left text-sm font-semibold text-[var(--text-primary)]">Email</th>
-                  <th className="!px-6 !py-4 text-left text-sm font-semibold text-[var(--text-primary)]">Team</th>
-                  <th className="!px-6 !py-4 text-left text-sm font-semibold text-[var(--text-primary)]">Type</th>
-                  <th className="!px-6 !py-4 text-center text-sm font-semibold text-[var(--text-primary)]">Actions</th>
+                  <th className="!px-6 !py-4 text-left text-xs font-semibold text-[var(--text-primary)]">Employee</th>
+                  <th className="!px-6 !py-4 text-left text-xs font-semibold text-[var(--text-primary)]">Email</th>
+                  <th className="!px-6 !py-4 text-left text-xs font-semibold text-[var(--text-primary)]">Team</th>
+                  <th className="!px-6 !py-4 text-left text-xs font-semibold text-[var(--text-primary)]">Type</th>
+                  <th className="!px-6 !py-4 text-center text-xs font-semibold text-[var(--text-primary)]">Actions</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[var(--border-color)]">
@@ -204,27 +204,27 @@ const Employees = () => {
                     <tr key={employee.id} className="hover:bg-[var(--bg-tertiary)] transition-colors duration-200">
                       <td className="!px-6 !py-4">
                         <div className="flex items-center !gap-3">
-                          <div className="w-10 h-10 bg-[var(--accent-primary)] !rounded-full flex items-center justify-center text-white font-semibold text-sm">
+                          <div className="w-10 h-10 bg-[var(--accent-primary)] !rounded-full flex items-center justify-center text-white font-semibold text-xs">
                             {employee.name.split(' ').map(n => n[0]).join('').toUpperCase()}
                           </div>
                           <div>
-                            <div className="text-sm font-medium text-[var(--text-primary)]">
+                            <div className="text-xs font-medium text-[var(--text-primary)]">
                               {employee.name}
                             </div>
-                            <div className="text-sm text-[var(--text-secondary)]">
+                            <div className="text-xs text-[var(--text-secondary)]">
                               @{employee.username}
                             </div>
                           </div>
                         </div>
                       </td>
                       <td className="!px-6 !py-4">
-                        <div className="flex items-center !gap-2 text-sm text-[var(--text-secondary)]">
+                        <div className="flex items-center !gap-2 text-xs text-[var(--text-secondary)]">
                           <FiMail size={16} />
                           <span>{employee.email}</span>
                         </div>
                       </td>
                       <td className="!px-6 !py-4">
-                        <div className="flex items-center !gap-2 text-sm text-[var(--text-secondary)]">
+                        <div className="flex items-center !gap-2 text-xs text-[var(--text-secondary)]">
                           <FiUsers size={16} />
                           <span>{teamName || 'No team assigned'}</span>
                         </div>
@@ -277,7 +277,7 @@ const Employees = () => {
         {filteredEmployees.length === 0 && employees.length > 0 && (
           <div className="text-center !py-12">
             <FiUser size={64} className="mx-auto text-[var(--text-secondary)] !mb-4" />
-            <h3 className="text-xl font-semibold text-[var(--text-primary)] !mb-2">No Employees Found</h3>
+            <h3 className="text-lg font-semibold text-[var(--text-primary)] !mb-2">No Employees Found</h3>
             <p className="text-[var(--text-secondary)] !mb-6">Try adjusting your search or filter criteria</p>
             <button
               onClick={() => {
@@ -296,7 +296,7 @@ const Employees = () => {
         {employees.length === 0 && (
           <div className="text-center !py-12">
             <FiUser size={64} className="mx-auto text-[var(--text-secondary)] !mb-4" />
-            <h3 className="text-xl font-semibold text-[var(--text-primary)] !mb-2">No Employees Found</h3>
+            <h3 className="text-lg font-semibold text-[var(--text-primary)] !mb-2">No Employees Found</h3>
             <p className="text-[var(--text-secondary)] !mb-6">Create your first employee to get started</p>
             <button
               onClick={handleCreateEmployee}

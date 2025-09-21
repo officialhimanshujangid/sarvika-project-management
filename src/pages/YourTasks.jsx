@@ -179,34 +179,34 @@ const YourTasks = () => {
           <div className="bg-[var(--bg-secondary)] !rounded-lg !p-4 border border-[var(--border-color)]">
             <div className="flex items-center !gap-2 !mb-2">
               <FiTarget className="text-[var(--accent-primary)]" size={20} />
-              <span className="text-sm font-medium text-[var(--text-secondary)]">Total</span>
+              <span className="text-xs font-medium text-[var(--text-secondary)]">Total</span>
             </div>
-            <div className="text-2xl font-bold text-[var(--text-primary)]">{taskStats.total}</div>
+            <div className="text-xl font-bold text-[var(--text-primary)]">{taskStats.total}</div>
           </div>
           
           <div className="bg-[var(--bg-secondary)] !rounded-lg !p-4 border border-[var(--border-color)]">
             <div className="flex items-center !gap-2 !mb-2">
               <FiCheckCircle className="text-green-500" size={20} />
-              <span className="text-sm font-medium text-[var(--text-secondary)]">Completed</span>
+              <span className="text-xs font-medium text-[var(--text-secondary)]">Completed</span>
             </div>
-            <div className="text-2xl font-bold text-[var(--text-primary)]">{taskStats.completed}</div>
+            <div className="text-xl font-bold text-[var(--text-primary)]">{taskStats.completed}</div>
             <div className="text-xs text-[var(--text-secondary)]">{taskStats.completionRate}%</div>
           </div>
           
           <div className="bg-[var(--bg-secondary)] !rounded-lg !p-4 border border-[var(--border-color)]">
             <div className="flex items-center !gap-2 !mb-2">
               <FiAlertCircle className="text-blue-500" size={20} />
-              <span className="text-sm font-medium text-[var(--text-secondary)]">In Progress</span>
+              <span className="text-xs font-medium text-[var(--text-secondary)]">In Progress</span>
             </div>
-            <div className="text-2xl font-bold text-[var(--text-primary)]">{taskStats.inProgress}</div>
+            <div className="text-xl font-bold text-[var(--text-primary)]">{taskStats.inProgress}</div>
           </div>
           
           <div className="bg-[var(--bg-secondary)] !rounded-lg !p-4 border border-[var(--border-color)]">
             <div className="flex items-center !gap-2 !mb-2">
               <FiClock className="text-gray-500" size={20} />
-              <span className="text-sm font-medium text-[var(--text-secondary)]">To Do</span>
+              <span className="text-xs font-medium text-[var(--text-secondary)]">To Do</span>
             </div>
-            <div className="text-2xl font-bold text-[var(--text-primary)]">{taskStats.todo}</div>
+            <div className="text-xl font-bold text-[var(--text-primary)]">{taskStats.todo}</div>
           </div>
           
           
@@ -214,9 +214,9 @@ const YourTasks = () => {
           <div className="bg-[var(--bg-secondary)] !rounded-lg !p-4 border border-[var(--border-color)]">
             <div className="flex items-center !gap-2 !mb-2">
               <FiZap className="text-yellow-500" size={20} />
-              <span className="text-sm font-medium text-[var(--text-secondary)]">High Priority</span>
+              <span className="text-xs font-medium text-[var(--text-secondary)]">High Priority</span>
             </div>
-            <div className="text-2xl font-bold text-[var(--text-primary)]">{taskStats.highPriority}</div>
+            <div className="text-xl font-bold text-[var(--text-primary)]">{taskStats.highPriority}</div>
           </div>
         </div>
       </div>
@@ -274,7 +274,7 @@ const YourTasks = () => {
           <div className="text-[var(--text-secondary)] !mb-4">
             <FiCalendar size={64} className="!mx-auto" />
           </div>
-          <h3 className="text-xl font-medium text-[var(--text-primary)] !mb-2">No tasks found</h3>
+          <h3 className="text-lg font-medium text-[var(--text-primary)] !mb-2">No tasks found</h3>
           <p className="text-[var(--text-secondary)]">
             {searchTerm || statusFilter !== 'all' || priorityFilter !== 'all'
               ? "No tasks match your current filters."
@@ -293,7 +293,7 @@ const YourTasks = () => {
                 <div className="flex items-start justify-between !mb-4">
                   <div className="flex-1">
                     <div className="flex items-center !gap-3 !mb-2">
-                      <h3 className="text-lg font-semibold text-[var(--text-primary)]">
+                      <h3 className="text-sm font-semibold text-[var(--text-primary)]">
                         {task.title}
                       </h3>
                       <span className={`!px-2 !py-1 !rounded-full text-xs font-medium flex items-center !gap-1 ${getStatusColor(task.status || 'todo')}`}>
@@ -306,7 +306,7 @@ const YourTasks = () => {
                       </span>
                     </div>
                     
-                    <div className="flex items-center !gap-4 text-sm text-[var(--text-secondary)] !mb-3">
+                    <div className="flex items-center !gap-4 text-xs text-[var(--text-secondary)] !mb-3">
                       <div className="flex items-center !gap-1">
                         <FiFolder size={14} />
                         <Link 
@@ -323,7 +323,7 @@ const YourTasks = () => {
                      
                     </div>
 
-                    <div className="text-sm text-[var(--text-secondary)] !mb-4 line-clamp-2">
+                    <div className="text-xs text-[var(--text-secondary)] !mb-4 line-clamp-2">
                       <div 
                       
                         className="rich-text-content "
@@ -335,20 +335,20 @@ const YourTasks = () => {
                       <div className="flex flex-col !gap-2">
                         <button
                           onClick={() => setViewingTask(task)}
-                          className="bg-[var(--accent-primary)] hover:bg-[var(--accent-primary)]/90 text-white !px-4 !py-2 !rounded-lg font-medium text-sm transition-colors hover:shadow-md flex items-center !gap-2"
+                          className="bg-[var(--accent-primary)] hover:bg-[var(--accent-primary)]/90 text-white !px-4 !py-2 !rounded-lg font-medium text-xs transition-colors hover:shadow-md flex items-center !gap-2"
                         >
                           <FiEye size={14} />
                           View Details
                         </button>
                         <button
                           onClick={() => handleStatusChange(task.id, getNextStatus(task.status || 'todo'))}
-                          className={`${getStatusButtonColor(task.status || 'todo')} text-white !px-4 !py-2 !rounded-lg font-medium text-sm transition-colors hover:shadow-md`}
+                          className={`${getStatusButtonColor(task.status || 'todo')} text-white !px-4 !py-2 !rounded-lg font-medium text-xs transition-colors hover:shadow-md`}
                         >
                           {getStatusButtonText(task.status || 'todo')}
                         </button>
                         <Link
                           to={`/projects/${task.projectId}`}
-                          className="text-[var(--text-secondary)] hover:text-[var(--accent-primary)] text-sm text-center transition-colors !py-1"
+                          className="text-[var(--text-secondary)] hover:text-[var(--accent-primary)] text-xs text-center transition-colors !py-1"
                         >
                           View Project
                         </Link>

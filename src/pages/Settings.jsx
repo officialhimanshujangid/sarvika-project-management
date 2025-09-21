@@ -46,7 +46,7 @@ const Settings = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-[var(--text-primary)] mb-3">Settings</h1>
-          <p className="text-lg text-[var(--text-secondary)]">Customize your application preferences and experience.</p>
+          <p className="text-sm text-[var(--text-secondary)]">Customize your application preferences and experience.</p>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8">
@@ -82,12 +82,12 @@ const Settings = () => {
             {activeTab === 'appearance' && (
               <div className="!space-y-8">
                 <div>
-                  <h2 className="text-2xl font-bold text-[var(--text-primary)] mb-6">Theme Settings</h2>
+                  <h2 className="text-xl font-bold text-[var(--text-primary)] mb-6">Theme Settings</h2>
                   
                   {/* Theme Selection */}
                   <div className="!space-y-6">
                     <div>
-                      <label className="block text-lg font-semibold text-[var(--text-primary)] mb-4">
+                      <label className="block text-sm font-semibold text-[var(--text-primary)] mb-4">
                         Choose Your Theme
                       </label>
                       <div className="grid grid-cols-1 sm:grid-cols-2 !gap-4 max-w-md">
@@ -114,7 +114,7 @@ const Settings = () => {
                           <span className="font-medium">Dark Mode</span>
                         </button>
                       </div>
-                      <p className="text-sm text-[var(--text-secondary)] mt-3">
+                      <p className="text-xs text-[var(--text-secondary)] mt-3">
                         Choose between light and dark themes to match your preference.
                       </p>
                     </div>
@@ -127,12 +127,12 @@ const Settings = () => {
             {activeTab === 'sidebar' && (
               <div className="!space-y-8">
                 <div>
-                  <h2 className="text-2xl font-bold text-[var(--text-primary)] mb-6">Sidebar Settings</h2>
+                  <h2 className="text-xl font-bold text-[var(--text-primary)] mb-6">Sidebar Settings</h2>
                   
                   <div className="!space-y-6">
                     {/* Sidebar Position */}
                     <div>
-                      <label className="block text-lg font-semibold text-[var(--text-primary)] mb-4">
+                      <label className="block text-sm font-semibold text-[var(--text-primary)] mb-4">
                         Sidebar Position
                       </label>
                       <div className="grid grid-cols-1 sm:grid-cols-2 !gap-4 max-w-md">
@@ -159,7 +159,7 @@ const Settings = () => {
                           <span className="font-medium">Right Side</span>
                         </button>
                       </div>
-                      <p className="text-sm text-[var(--text-secondary)] mt-3">
+                      <p className="text-xs text-[var(--text-secondary)] mt-3">
                         Choose whether the sidebar appears on the left or right side of the screen.
                       </p>
                     </div>
@@ -175,15 +175,15 @@ const Settings = () => {
             {activeTab === 'privacy' && (
               <div className="!space-y-8">
                 <div>
-                  <h2 className="text-2xl font-bold text-[var(--text-primary)] !mb-6">Privacy & Data Settings</h2>
+                  <h2 className="text-xl font-bold text-[var(--text-primary)] !mb-6">Privacy & Data Settings</h2>
                   
                   <div className="!space-y-6">
                     <div className="flex items-center justify-between !p-4 bg-[var(--bg-tertiary)] !rounded-lg">
                       <div className="flex items-center gap-4">
                         <FiEye className="text-[var(--text-secondary)]" size={24} />
                         <div>
-                          <div className="font-semibold text-[var(--text-primary)] text-lg">Analytics</div>
-                          <div className="text-sm text-[var(--text-secondary)]">Help improve the app with usage analytics</div>
+                          <div className="font-semibold text-[var(--text-primary)] text-sm">Analytics</div>
+                          <div className="text-xs text-[var(--text-secondary)]">Help improve the app with usage analytics</div>
                         </div>
                       </div>
                       <label className="relative inline-flex items-center cursor-pointer">
@@ -201,8 +201,8 @@ const Settings = () => {
                       <div className="flex items-center gap-4">
                         <FiShield className="text-[var(--text-secondary)]" size={24} />
                         <div>
-                          <div className="font-semibold text-[var(--text-primary)] text-lg">Crash Reporting</div>
-                          <div className="text-sm text-[var(--text-secondary)]">Send crash reports to help fix bugs</div>
+                          <div className="font-semibold text-[var(--text-primary)] text-sm">Crash Reporting</div>
+                          <div className="text-xs text-[var(--text-secondary)]">Send crash reports to help fix bugs</div>
                         </div>
                       </div>
                       <label className="relative inline-flex items-center cursor-pointer">
@@ -220,8 +220,8 @@ const Settings = () => {
                       <div className="flex items-center gap-4">
                         <FiEyeOff className="text-[var(--text-secondary)]" size={24} />
                         <div>
-                          <div className="font-semibold text-[var(--text-primary)] text-lg">Data Collection</div>
-                          <div className="text-sm text-[var(--text-secondary)]">Allow collection of personal data</div>
+                          <div className="font-semibold text-[var(--text-primary)] text-sm">Data Collection</div>
+                          <div className="text-xs text-[var(--text-secondary)]">Allow collection of personal data</div>
                         </div>
                       </div>
                       <label className="relative inline-flex items-center cursor-pointer">
