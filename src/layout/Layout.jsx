@@ -12,11 +12,24 @@ import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 
 const Layout = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(() => {
+    // Initialize sidebar state based on screen size
+    if (typeof window !== 'undefined') {
+      return window.innerWidth >= 768; // Open on desktop, closed on mobile
+    }
+    return true;
+  });
+
   const settings = useSelector((state) => state.settings);
 
+
+
   const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
+    setIsSidebarOpen(prev => !prev);
+  };
+
+  const closeSidebar = () => {
+    setIsSidebarOpen(false);
   };
 
   return (
@@ -24,7 +37,7 @@ const Layout = () => {
       <Header toggleSidebar={toggleSidebar} />
       <div className="main-container" style={{ display: 'flex' }}>
         {settings.sidebar.position === 'left' && (
-          <Sidebar isOpen={isSidebarOpen} position="left" />
+          <Sidebar isOpen={isSidebarOpen} position="left" onClose={closeSidebar} />
         )}
         <div className="content min-h-screen" style={{ flex: 1, padding: '1rem' }}>
         <Routes>
@@ -38,7 +51,7 @@ const Layout = () => {
         </Routes>
         </div>
         {settings.sidebar.position === 'right' && (
-          <Sidebar isOpen={isSidebarOpen} position="right" />
+          <Sidebar isOpen={isSidebarOpen} position="right" onClose={closeSidebar} />
         )}
       </div>
     </div>

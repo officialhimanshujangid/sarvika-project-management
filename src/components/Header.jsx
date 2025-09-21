@@ -1,3 +1,4 @@
+import { FiMenu } from 'react-icons/fi';
 import ThemeToggle from './ThemeToggle';
 
 const Header = ({ toggleSidebar }) => {
@@ -10,14 +11,24 @@ const Header = ({ toggleSidebar }) => {
         borderBottomColor: 'var(--border-color)'
       }}
     >
-      <h1 className="text-lg font-semibold m-0">Project Management</h1>
+      <div className="flex items-center !gap-3">
+        <button 
+          onClick={toggleSidebar}
+          className="!p-2 !rounded-lg hover:bg-[var(--bg-tertiary)] transition-colors md:hidden"
+          title="Toggle Sidebar"
+        >
+          <FiMenu size={20} />
+        </button>
+        <h1 className="text-lg font-semibold m-0">Project Management</h1>
+      </div>
       <div className="flex items-center !gap-3">
         <ThemeToggle />
         <button 
           onClick={toggleSidebar}
-          className="btn btn-primary"
+          className="!p-2 !rounded-lg hover:bg-[var(--bg-tertiary)] transition-colors hidden md:block"
+          title="Toggle Sidebar"
         >
-          ☰
+          <FiMenu size={20} />
         </button>
       </div>
     </header>

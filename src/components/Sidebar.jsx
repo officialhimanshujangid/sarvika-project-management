@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../redux/redux_slices/authSlice";
 import { resetTheme } from "../redux/redux_slices/settingsSlice";
@@ -12,7 +12,8 @@ import {
   FiSettings, 
   FiChevronDown, 
   FiChevronRight,
-  FiLogOut
+  FiLogOut,
+  FiX
 } from "react-icons/fi";
 
 const sidebarMenu = [
@@ -48,11 +49,24 @@ const sidebarMenu = [
   },
 ];
 
-const Sidebar = ({ isOpen, position = 'left' }) => {
+const Sidebar = ({ isOpen, position = 'left', onClose }) => {
   const dispatch = useDispatch();
   const { currentUser } = useSelector((state) => state.auth);
   const [openMenus, setOpenMenus] = useState({});
+  const [isMobile, setIsMobile] = useState(false);
   const location = useLocation();
+
+  // Check if device is mobile
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const toggleSubMenu = (label) => {
     setOpenMenus((prev) => ({
@@ -76,18 +90,57 @@ const Sidebar = ({ isOpen, position = 'left' }) => {
     ? { borderLeft: '1px solid var(--border-color)' }
     : { borderRight: '1px solid var(--border-color)' };
 
+  // Close sidebar on mobile when clicking outside
+  const handleOverlayClick = (e) => {
+    if (isMobile && e.target === e.currentTarget && onClose) {
+      onClose();
+    }
+  };
+
+  // Close sidebar on mobile when route changes (only for navigation links)
+  const handleLinkClick = () => {
+    if (isMobile && onClose) {
+      onClose();
+    }
+  };
+
   return (
-    <div
-      className={` overflow-y-auto transition-all duration-300 ${
-        isOpen ? "w-72" : "w-0"
-      }`}
-      style={{
-        backgroundColor: 'var(--bg-secondary)',
-        ...borderStyle
-      }}
-    >
+    <>
+      {/* Mobile Overlay */}
+      {isMobile && isOpen && (
+        <div 
+          className="mobile-sidebar-overlay"
+          onClick={handleOverlayClick}
+        />
+      )}
+      
+      {/* Sidebar */}
+      <div
+        className={`overflow-y-auto transition-all duration-300 ${
+          isMobile 
+            ? `mobile-sidebar ${isOpen ? 'open' : ''}`
+            : `${
+                isOpen ? 'w-72' : 'w-0'
+              }`
+        }`}
+        style={{
+          backgroundColor: 'var(--bg-secondary)',
+          ...borderStyle
+        }}
+      >
       <div className="!p-4">  
         <div className="!mb-2">
+          {/* Mobile Close Button */}
+          {isMobile && (
+            <div className="flex justify-end !mb-4">
+              <button
+                onClick={onClose}
+                className="!p-2 !rounded-lg hover:bg-[var(--bg-tertiary)] transition-colors"
+              >
+                <FiX size={20} className="text-[var(--text-primary)]" />
+              </button>
+            </div>
+          )}
           
           {/* User Info */}
           {currentUser && (
@@ -141,6 +194,7 @@ const Sidebar = ({ isOpen, position = 'left' }) => {
                           <Link
                             key={child.label}
                             to={child.path}
+                            onClick={handleLinkClick}
                             className={`block !px-4 !py-2 !rounded-lg text-xs transition-all duration-200 ${
                               isActive(child.path)
                                 ? 'bg-[var(--accent-primary)] text-white'
@@ -156,6 +210,7 @@ const Sidebar = ({ isOpen, position = 'left' }) => {
                 ) : (
                   <Link
                     to={item.path}
+                    onClick={handleLinkClick}
                     className={`flex items-center gap-3 !px-4 !py-3 !rounded-lg transition-all duration-200 group ${
                       isItemActive
                         ? 'bg-[var(--accent-primary)] text-white shadow-lg'
@@ -182,7 +237,8 @@ const Sidebar = ({ isOpen, position = 'left' }) => {
           </div>
         </nav>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

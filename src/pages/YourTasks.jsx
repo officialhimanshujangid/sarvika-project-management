@@ -32,7 +32,7 @@ const YourTasks = () => {
   const [viewingTask, setViewingTask] = useState(null);
 
   // Filter tasks assigned to current user
-  const userTasks = tasks?.filter(task => task.assignedTo === currentUser.id);
+  const userTasks = tasks?.filter(task => task.assignedTo === currentUser?.id);
 
   const getProjectName = useCallback((projectId) => {
     const project = projects.find(p => p.id === projectId);
