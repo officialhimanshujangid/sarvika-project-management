@@ -1,0 +1,64 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "E-commerce Platform",
+      "description": "<p>Develop a comprehensive e-commerce platform with user authentication, product catalog, shopping cart, and payment integration.</p><p><strong>Key Features:</strong></p><ul><li>User registration and login</li><li>Product search and filtering</li><li>Shopping cart functionality</li><li>Payment gateway integration</li><li>Order management system</li></ul>",
+      "teamId": 1,
+      "status": "in_progress",
+      "priority": "high",
+      "startDate": "2024-01-15",
+      "endDate": "2024-06-30",
+      "createdAt": "2024-01-10T10:00:00Z",
+      "updatedAt": "2024-01-15T14:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Mobile App Development",
+      "description": "<p>Create a cross-platform mobile application for iOS and Android using React Native.</p><p><strong>Technical Requirements:</strong></p><ul><li>React Native framework</li><li>Redux for state management</li><li>API integration</li><li>Push notifications</li><li>Offline functionality</li></ul>",
+      "teamId": 2,
+      "status": "planning",
+      "priority": "medium",
+      "startDate": "2024-02-01",
+      "endDate": "2024-08-15",
+      "createdAt": "2024-01-20T09:15:00Z",
+      "updatedAt": "2024-01-25T11:45:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Data Analytics Dashboard",
+      "description": "<p>Build an interactive dashboard for data visualization and analytics using modern web technologies.</p><p><strong>Features Include:</strong></p><ul><li>Real-time data visualization</li><li>Custom chart components</li><li>Data export functionality</li><li>User role management</li><li>Responsive design</li></ul>",
+      "teamId": 1,
+      "status": "completed",
+      "priority": "low",
+      "startDate": "2023-11-01",
+      "endDate": "2024-01-31",
+      "createdAt": "2023-10-25T08:30:00Z",
+      "updatedAt": "2024-01-31T16:20:00Z"
+    },
+    {
+      "id": 4,
+      "name": "API Gateway Service",
+      "description": "<p>Develop a microservices API gateway to handle routing, authentication, and rate limiting for multiple services.</p><p><strong>Core Components:</strong></p><ul><li>Request routing and load balancing</li><li>JWT authentication</li><li>Rate limiting and throttling</li><li>API documentation</li><li>Monitoring and logging</li></ul>",
+      "teamId": 3,
+      "status": "in_progress",
+      "priority": "high",
+      "startDate": "2024-01-01",
+      "endDate": "2024-04-30",
+      "createdAt": "2023-12-15T12:00:00Z",
+      "updatedAt": "2024-01-20T10:15:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Content Management System",
+      "description": "<p>Create a flexible CMS for managing website content with a user-friendly admin interface.</p><p><strong>Key Capabilities:</strong></p><ul><li>Content creation and editing</li><li>Media library management</li><li>User permissions</li><li>SEO optimization tools</li><li>Multi-language support</li></ul>",
+      "teamId": 2,
+      "status": "planning",
+      "priority": "medium",
+      "startDate": "2024-03-01",
+      "endDate": "2024-09-30",
+      "createdAt": "2024-01-05T14:20:00Z",
+      "updatedAt": "2024-01-10T09:30:00Z"
+    }
+  ]
+}

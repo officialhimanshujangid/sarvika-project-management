@@ -1,0 +1,283 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "jsmith",
+      "password": "jsmith2024",
+      "name": "John Smith",
+      "email": "jsmith@company.com",
+      "userType": "employee",
+      "teamId": 1
+    },
+    {
+      "id": 2,
+      "username": "sjohnson",
+      "password": "sjohnson2024",
+      "name": "Sarah Johnson",
+      "email": "sjohnson@company.com",
+      "userType": "employee",
+      "teamId": 3
+    },
+    {
+      "id": 3,
+      "username": "rbrown",
+      "password": "rbrown2024",
+      "name": "Robert Brown",
+      "email": "rbrown@company.com",
+      "userType": "employee",
+      "teamId": 2
+    },
+    {
+      "id": 4,
+      "username": "ldavis",
+      "password": "ldavis2024",
+      "name": "Lisa Davis",
+      "email": "ldavis@company.com",
+      "userType": "employee",
+      "teamId": 4
+    },
+    {
+      "id": 5,
+      "username": "mwilson",
+      "password": "mwilson2024",
+      "name": "Michael Wilson",
+      "email": "mwilson@company.com",
+      "userType": "employee",
+      "teamId": 2
+    },
+    {
+      "id": 6,
+      "username": "jmiller",
+      "password": "jmiller2024",
+      "name": "Jennifer Miller",
+      "email": "jmiller@company.com",
+      "userType": "employee",
+      "teamId": 1
+    },
+    {
+      "id": 7,
+      "username": "dmoore",
+      "password": "dmoore2024",
+      "name": "David Moore",
+      "email": "dmoore@company.com",
+      "userType": "employee",
+      "teamId": 3
+    },
+    {
+      "id": 8,
+      "username": "ataylor",
+      "password": "ataylor2024",
+      "name": "Amanda Taylor",
+      "email": "ataylor@company.com",
+      "userType": "employee",
+      "teamId": 4
+    },
+    {
+      "id": 9,
+      "username": "canderson",
+      "password": "canderson2024",
+      "name": "Christopher Anderson",
+      "email": "canderson@company.com",
+      "userType": "employee",
+      "teamId": 2
+    },
+    {
+      "id": 10,
+      "username": "mthomas",
+      "password": "mthomas2024",
+      "name": "Michelle Thomas",
+      "email": "mthomas@company.com",
+      "userType": "employee",
+      "teamId": 1
+    },
+    {
+      "id": 11,
+      "username": "jjackson",
+      "password": "jjackson2024",
+      "name": "James Jackson",
+      "email": "jjackson@company.com",
+      "userType": "employee",
+      "teamId": 3
+    },
+    {
+      "id": 12,
+      "username": "swhite",
+      "password": "swhite2024",
+      "name": "Stephanie White",
+      "email": "swhite@company.com",
+      "userType": "employee",
+      "teamId": 4
+    },
+    {
+      "id": 13,
+      "username": "rharris",
+      "password": "rharris2024",
+      "name": "Ryan Harris",
+      "email": "rharris@company.com",
+      "userType": "employee",
+      "teamId": 2
+    },
+    {
+      "id": 14,
+      "username": "lclark",
+      "password": "lclark2024",
+      "name": "Laura Clark",
+      "email": "lclark@company.com",
+      "userType": "employee",
+      "teamId": 1
+    },
+    {
+      "id": 15,
+      "username": "klewis",
+      "password": "klewis2024",
+      "name": "Kevin Lewis",
+      "email": "klewis@company.com",
+      "userType": "employee",
+      "teamId": 3
+    },
+    {
+      "id": 16,
+      "username": "nlee",
+      "password": "nlee2024",
+      "name": "Nicole Lee",
+      "email": "nlee@company.com",
+      "userType": "employee",
+      "teamId": 4
+    },
+    {
+      "id": 17,
+      "username": "bwalker",
+      "password": "bwalker2024",
+      "name": "Brandon Walker",
+      "email": "bwalker@company.com",
+      "userType": "employee",
+      "teamId": 2
+    },
+    {
+      "id": 18,
+      "username": "ahall",
+      "password": "ahall2024",
+      "name": "Ashley Hall",
+      "email": "ahall@company.com",
+      "userType": "employee",
+      "teamId": 1
+    },
+    {
+      "id": 19,
+      "username": "jallen",
+      "password": "jallen2024",
+      "name": "Justin Allen",
+      "email": "jallen@company.com",
+      "userType": "employee",
+      "teamId": 3
+    },
+    {
+      "id": 20,
+      "username": "syoung",
+      "password": "syoung2024",
+      "name": "Samantha Young",
+      "email": "syoung@company.com",
+      "userType": "employee",
+      "teamId": 4
+    },
+    {
+      "id": 21,
+      "username": "mking",
+      "password": "mking2024",
+      "name": "Matthew King",
+      "email": "mking@company.com",
+      "userType": "employee",
+      "teamId": 2
+    },
+    {
+      "id": 22,
+      "username": "ewright",
+      "password": "ewright2024",
+      "name": "Emily Wright",
+      "email": "ewright@company.com",
+      "userType": "employee",
+      "teamId": 1
+    },
+    {
+      "id": 23,
+      "username": "dlopez",
+      "password": "dlopez2024",
+      "name": "Daniel Lopez",
+      "email": "dlopez@company.com",
+      "userType": "employee",
+      "teamId": 3
+    },
+    {
+      "id": 24,
+      "username": "ahill",
+      "password": "ahill2024",
+      "name": "Amanda Hill",
+      "email": "ahill@company.com",
+      "userType": "employee",
+      "teamId": 4
+    },
+    {
+      "id": 25,
+      "username": "jscott",
+      "password": "jscott2024",
+      "name": "Jonathan Scott",
+      "email": "jscott@company.com",
+      "userType": "employee",
+      "teamId": 2
+    },
+    {
+      "id": 26,
+      "username": "mgreen",
+      "password": "mgreen2024",
+      "name": "Maria Green",
+      "email": "mgreen@company.com",
+      "userType": "employee",
+      "teamId": 1
+    },
+    {
+      "id": 27,
+      "username": "radams",
+      "password": "radams2024",
+      "name": "Robert Adams",
+      "email": "radams@company.com",
+      "userType": "employee",
+      "teamId": 3
+    },
+    {
+      "id": 28,
+      "username": "lbaker",
+      "password": "lbaker2024",
+      "name": "Lisa Baker",
+      "email": "lbaker@company.com",
+      "userType": "employee",
+      "teamId": 4
+    },
+    {
+      "id": 29,
+      "username": "kgonzalez",
+      "password": "kgonzalez2024",
+      "name": "Kevin Gonzalez",
+      "email": "kgonzalez@company.com",
+      "userType": "employee",
+      "teamId": 2
+    },
+    {
+      "id": 30,
+      "username": "snelson",
+      "password": "snelson2024",
+      "name": "Sarah Nelson",
+      "email": "snelson@company.com",
+      "userType": "employee",
+      "teamId": 1
+    },
+    {
+      "id": 31,
+      "username": "admin",
+      "password": "admin123",
+      "name": "System Administrator",
+      "email": "admin@company.com",
+      "userType": "head",
+      "teamId": null
+    }
+  ]
+}

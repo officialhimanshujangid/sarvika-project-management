@@ -1,0 +1,29 @@
+{
+  "teams": [
+    {
+      "id": 1,
+      "name": "Marketing Team",
+      "description": "Responsible for company branding and campaigns"
+    },
+    {
+      "id": 2,
+      "name": "Engineering Team",
+      "description": "Software development and technical solutions"
+    },
+    {
+      "id": 3,
+      "name": "Sales Team",
+      "description": "Handles client acquisition and revenue generation"
+    },
+    {
+      "id": 4,
+      "name": "Operations Team",
+      "description": "Manages day-to-day business operations"
+    },
+    {
+      "id": 5,
+      "name": "Leadership Team",
+      "description": "Executive management and strategic direction"
+    }
+  ]
+}

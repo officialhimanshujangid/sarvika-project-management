@@ -1,0 +1,172 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "User Authentication Setup",
+      "description": "Implement user registration, login, and password reset functionality",
+      "projectId": 1,
+      "assignedTo": 1,
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2024-02-15",
+      "createdAt": "2024-01-15T10:00:00Z",
+      "updatedAt": "2024-01-20T14:30:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Product Catalog Design",
+      "description": "Design and implement product listing, search, and filtering features",
+      "projectId": 1,
+      "assignedTo": 2,
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2024-02-28",
+      "createdAt": "2024-01-15T10:15:00Z",
+      "updatedAt": "2024-01-15T10:15:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Shopping Cart Implementation",
+      "description": "Create shopping cart functionality with add/remove items and quantity management",
+      "projectId": 1,
+      "assignedTo": 3,
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2024-03-15",
+      "createdAt": "2024-01-15T10:30:00Z",
+      "updatedAt": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": 4,
+      "title": "Payment Integration",
+      "description": "Integrate payment gateway for secure online transactions",
+      "projectId": 1,
+      "assignedTo": 1,
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2024-04-01",
+      "createdAt": "2024-01-15T10:45:00Z",
+      "updatedAt": "2024-01-15T10:45:00Z"
+    },
+    {
+      "id": 5,
+      "title": "React Native Setup",
+      "description": "Set up React Native development environment and project structure",
+      "projectId": 2,
+      "assignedTo": 4,
+      "status": "completed",
+      "priority": "high",
+      "dueDate": "2024-02-01",
+      "createdAt": "2024-01-20T09:15:00Z",
+      "updatedAt": "2024-01-25T11:45:00Z"
+    },
+    {
+      "id": 6,
+      "title": "UI Component Library",
+      "description": "Create reusable UI components for the mobile app",
+      "projectId": 2,
+      "assignedTo": 5,
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2024-03-01",
+      "createdAt": "2024-01-20T09:30:00Z",
+      "updatedAt": "2024-01-25T12:00:00Z"
+    },
+    {
+      "id": 7,
+      "title": "API Integration",
+      "description": "Connect mobile app with backend APIs",
+      "projectId": 2,
+      "assignedTo": 4,
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2024-03-15",
+      "createdAt": "2024-01-20T09:45:00Z",
+      "updatedAt": "2024-01-20T09:45:00Z"
+    },
+    {
+      "id": 8,
+      "title": "Data Visualization Charts",
+      "description": "Implement interactive charts and graphs for data display",
+      "projectId": 3,
+      "assignedTo": 6,
+      "status": "completed",
+      "priority": "high",
+      "dueDate": "2024-01-15",
+      "createdAt": "2023-11-01T08:30:00Z",
+      "updatedAt": "2024-01-15T16:20:00Z"
+    },
+    {
+      "id": 9,
+      "title": "Real-time Data Updates",
+      "description": "Implement WebSocket connections for real-time data updates",
+      "projectId": 3,
+      "assignedTo": 7,
+      "status": "completed",
+      "priority": "medium",
+      "dueDate": "2024-01-20",
+      "createdAt": "2023-11-01T08:45:00Z",
+      "updatedAt": "2024-01-20T14:30:00Z"
+    },
+    {
+      "id": 10,
+      "title": "API Gateway Architecture",
+      "description": "Design the overall architecture for the API gateway service",
+      "projectId": 4,
+      "assignedTo": 8,
+      "status": "completed",
+      "priority": "high",
+      "dueDate": "2024-01-15",
+      "createdAt": "2023-12-15T12:00:00Z",
+      "updatedAt": "2024-01-15T10:15:00Z"
+    },
+    {
+      "id": 11,
+      "title": "Authentication Middleware",
+      "description": "Implement JWT-based authentication middleware",
+      "projectId": 4,
+      "assignedTo": 9,
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2024-02-15",
+      "createdAt": "2023-12-15T12:15:00Z",
+      "updatedAt": "2024-01-20T11:30:00Z"
+    },
+    {
+      "id": 12,
+      "title": "Rate Limiting Implementation",
+      "description": "Add rate limiting and throttling mechanisms",
+      "projectId": 4,
+      "assignedTo": 8,
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2024-03-01",
+      "createdAt": "2023-12-15T12:30:00Z",
+      "updatedAt": "2023-12-15T12:30:00Z"
+    },
+    {
+      "id": 13,
+      "title": "CMS Admin Interface",
+      "description": "Design and develop the admin interface for content management",
+      "projectId": 5,
+      "assignedTo": 10,
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2024-04-01",
+      "createdAt": "2024-01-05T14:20:00Z",
+      "updatedAt": "2024-01-05T14:20:00Z"
+    },
+    {
+      "id": 14,
+      "title": "Media Library System",
+      "description": "Create a media library for managing images, videos, and documents",
+      "projectId": 5,
+      "assignedTo": 11,
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2024-05-15",
+      "createdAt": "2024-01-05T14:35:00Z",
+      "updatedAt": "2024-01-05T14:35:00Z"
+    }
+  ]
+}
